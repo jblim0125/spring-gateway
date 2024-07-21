@@ -31,6 +31,25 @@ spring:
               - POST
               - GET
               - DELETE
+      default-filters:
+        - TokenRelay=
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:9090/realms/test/protocol/openid-connect/certs"
+          issuer-uri: "http://localhost:9090/realms/test"
+      client:
+        provider:
+          keycloak:
+            issuer-uri: "http://localhost:9090/realms/test"
+        registration:
+          keycloak:
+            client-id: gateway
+            client-secret: "JxNXRCswbQNb5oiy09fUNQizg0tg9OI8"
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
 #      routes:
 #        - id: service-a
 #          uri: http://localhost:8082

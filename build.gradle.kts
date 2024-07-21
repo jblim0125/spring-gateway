@@ -38,19 +38,19 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.2")
 
-    // Spring Cloud Gateway
     // Spring Boot
     implementation("org.springframework.boot:spring-boot-starter:3.2.7")
     implementation("org.springframework.boot:spring-boot-starter-webflux:3.2.7")
 //    implementation("org.springframework.boot:spring-boot-starter-validation:3.2.7")
 //    implementation("org.springframework.boot:spring-boot-configuration-processor:3.2.7")
-//    implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
-    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.boot:spring-boot-starter-security:3.2.7")
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-client:3.2.7")
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server:3.2.7")
+    implementation("org.springframework.boot:spring-boot-starter-actuator:3.2.7")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools:3.2.7")
 //    implementation("org.springframework.cloud:spring-cloud-loadbalancer:4.1.0")
 //    implementation("org.springframework.boot:spring-boot-starter-data-redis:3.3.1")
-//    implementation("org.springframework.boot:spring-boot-starter-security:3.3.1")
 
     // R2DBC
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:3.2.7")
@@ -61,7 +61,7 @@ dependencies {
     implementation("org.flywaydb:flyway-core:10.15.2")
     implementation("org.flywaydb:flyway-mysql:10.15.2")
 
-    // Gateway
+    // Spring Cloud Gateway
     implementation("org.springframework.cloud:spring-cloud-starter-gateway:4.1.0")
 
 //    implementation("io.projectreactor.addons:reactor-extra")
